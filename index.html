@@ -7,432 +7,314 @@
 <title>Young Economics Indonesia</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
 
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#f5f0e6;
-    color:#080808;
-    font-family:'DM Sans',sans-serif;
+background:#f5f0e6;
+color:#080808;
+font-family:'DM Sans',sans-serif;
 }
 
 a{
-    text-decoration:none;
+text-decoration:none;
+color:inherit;
 }
 
 .container{
-    width:92%;
-    max-width:1150px;
-    margin:auto;
+width:90%;
+max-width:1100px;
+margin:auto;
 }
 
 /* HEADER */
 
 header{
-    background:#050505;
-    color:white;
-    position:sticky;
-    top:0;
-    z-index:999;
+background:#050505;
+color:white;
 }
 
 .header{
-    height:80px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+height:78px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 .logo{
-    font-family:'Playfair Display',serif;
-    font-size:28px;
-    color:white;
+font-family:'Playfair Display',serif;
+font-size:25px;
 }
 
 .logo span{
-    color:#d8b46a;
+color:#d8b46a;
 }
 
 .instagram{
-    background:#f5f0e6;
-    color:#050505;
-    padding:13px 22px;
-    border:1px solid #d8b46a;
-    font-size:11px;
-    font-weight:700;
-    letter-spacing:2px;
-    transition:.3s;
+font-size:10px;
+font-weight:700;
+letter-spacing:1.5px;
+padding:10px 14px;
+border:1px solid #d8b46a;
+color:#f5f0e6;
+transition:.3s;
 }
 
 .instagram:hover{
-    background:#d8b46a;
-}
-
-/* NAVIGATION */
-
-nav{
-    background:#d8b46a;
-}
-
-.nav{
-    display:flex;
-    justify-content:center;
-    gap:45px;
-    padding:15px;
-}
-
-.nav a{
-    color:#050505;
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:2px;
+background:#d8b46a;
+color:#050505;
 }
 
 /* HERO */
 
 .hero{
-    background:#050505;
-    color:white;
-    padding:100px 0;
-}
-
-.hero-grid{
-    display:grid;
-    grid-template-columns:1.3fr .7fr;
-    gap:60px;
-    align-items:center;
+background:#050505;
+color:white;
+padding:100px 0;
 }
 
 .label{
-    color:#d8b46a;
-    font-size:12px;
-    letter-spacing:3px;
-    font-weight:700;
-    margin-bottom:20px;
+color:#d8b46a;
+font-size:11px;
+font-weight:700;
+letter-spacing:3px;
 }
 
 .hero h1{
-    font-family:'Playfair Display',serif;
-    font-size:clamp(48px,7vw,82px);
-    line-height:1;
+font-family:'Playfair Display',serif;
+font-size:clamp(48px,8vw,80px);
+line-height:1;
+margin-top:18px;
 }
 
 .hero h1 span{
-    color:#d8b46a;
+color:#d8b46a;
 }
 
 .hero p{
-    color:#aaa;
-    max-width:580px;
-    margin-top:25px;
-    font-size:17px;
+max-width:600px;
+color:#aaa;
+margin-top:25px;
+font-size:16px;
 }
 
 .button{
-    display:inline-block;
-    margin-top:30px;
-    background:#d8b46a;
-    color:#050505;
-    padding:15px 25px;
-    font-weight:700;
-    font-size:12px;
-    letter-spacing:1px;
+display:inline-block;
+margin-top:30px;
+padding:14px 22px;
+background:#d8b46a;
+color:#050505;
+font-size:11px;
+font-weight:700;
+letter-spacing:1px;
 }
 
-.hero-card{
-    border:1px solid #333;
-    padding:35px;
-    background:#101010;
-}
+/* ECONOMICS 101 */
 
-.hero-card h2{
-    font-family:'Playfair Display',serif;
-    font-size:32px;
-    margin:15px 0;
-}
-
-.hero-card p{
-    font-size:14px;
-}
-
-/* SECTION */
-
-section{
-    padding:85px 0;
-}
-
-.section-label{
-    color:#a07830;
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:3px;
+.economics{
+padding:85px 0;
 }
 
 .title{
-    font-family:'Playfair Display',serif;
-    font-size:48px;
-    line-height:1.1;
-    margin:15px 0 40px;
+font-family:'Playfair Display',serif;
+font-size:46px;
+line-height:1.1;
+margin:15px 0 40px;
 }
 
-/* TOPICS */
-
-.topics{
-    background:#f5f0e6;
+.intro{
+color:#666;
+max-width:650px;
+margin-bottom:40px;
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
+.lessons{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+}
+
+.lesson{
+background:white;
+border:1px solid #ddd5c6;
+padding:28px;
+transition:.3s;
+}
+
+.lesson:hover{
+transform:translateY(-4px);
+border-color:#d8b46a;
+}
+
+.number{
+font-size:10px;
+color:#9f7832;
+font-weight:700;
+letter-spacing:2px;
+}
+
+.lesson h3{
+font-family:'Playfair Display',serif;
+font-size:25px;
+margin:12px 0;
+}
+
+.lesson p{
+font-size:13px;
+color:#666;
+}
+
+/* FEATURE */
+
+.feature{
+background:#111;
+color:white;
+padding:80px 0;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.feature h2{
+font-family:'Playfair Display',serif;
+font-size:48px;
+line-height:1.05;
+margin-top:15px;
+}
+
+.feature p{
+color:#aaa;
+margin-top:20px;
 }
 
 .card{
-    background:white;
-    border:1px solid #ddd5c6;
-    padding:30px 25px;
-    transition:.3s;
+border:1px solid #333;
+padding:35px;
 }
 
-.card:hover{
-    transform:translateY(-6px);
-    border-color:#d8b46a;
+.card strong{
+display:block;
+font-family:'Playfair Display',serif;
+font-size:40px;
+color:#d8b46a;
+margin:15px 0;
 }
 
-.card-number{
-    color:#a07830;
-    font-size:12px;
-    font-weight:700;
-}
-
-.card h3{
-    font-family:'Playfair Display',serif;
-    font-size:26px;
-    margin:15px 0;
-}
-
-.card p{
-    color:#666;
-    font-size:14px;
-}
-
-/* ARTICLES */
-
-.articles{
-    background:#111;
-    color:white;
-}
-
-.article-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-}
-
-.article{
-    border:1px solid #333;
-    padding:35px;
-}
-
-.article h3{
-    font-family:'Playfair Display',serif;
-    font-size:32px;
-    margin:15px 0;
-}
-
-.article p{
-    color:#aaa;
-}
-
-.read{
-    display:inline-block;
-    margin-top:25px;
-    color:#d8b46a;
-    font-weight:700;
-}
-
-/* INFLATION */
-
-.inflation{
-    background:#d8b46a;
-}
-
-.inflation-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.inflation h2{
-    font-family:'Playfair Display',serif;
-    font-size:52px;
-    line-height:1.05;
-}
-
-.inflation p{
-    margin-top:20px;
-    max-width:550px;
-}
-
-.stat{
-    background:#080808;
-    color:white;
-    padding:40px;
-}
-
-.stat small{
-    color:#d8b46a;
-    letter-spacing:2px;
-}
-
-.stat strong{
-    display:block;
-    color:white;
-    font-family:'Playfair Display',serif;
-    font-size:65px;
-    margin:10px 0;
-}
-
-/* COMMUNITY */
+/* INSTAGRAM */
 
 .community{
-    background:#050505;
-    color:white;
-    text-align:center;
+text-align:center;
+padding:90px 0;
 }
 
 .community h2{
-    font-family:'Playfair Display',serif;
-    font-size:55px;
-    max-width:750px;
-    margin:20px auto;
+font-family:'Playfair Display',serif;
+font-size:45px;
+max-width:700px;
+margin:15px auto;
 }
 
 .community p{
-    color:#aaa;
-    max-width:600px;
-    margin:auto;
+color:#666;
+max-width:600px;
+margin:auto;
 }
 
-.community-button{
-    display:inline-block;
-    margin-top:30px;
-    background:#f5f0e6;
-    color:#050505;
-    padding:16px 28px;
-    border:1px solid #d8b46a;
-    font-weight:700;
-    letter-spacing:1px;
+.follow{
+display:inline-block;
+margin-top:28px;
+padding:14px 22px;
+background:#050505;
+color:white;
+border:1px solid #d8b46a;
+font-size:11px;
+font-weight:700;
+letter-spacing:1px;
 }
 
 /* FOOTER */
 
 footer{
-    background:#050505;
-    color:#777;
-    text-align:center;
-    padding:30px;
-    border-top:1px solid #222;
+background:#050505;
+color:#777;
+text-align:center;
+padding:28px;
+font-size:12px;
 }
 
 footer strong{
-    color:white;
+color:white;
 }
 
 /* MOBILE */
 
-@media(max-width:800px){
+@media(max-width:700px){
 
-    .hero-grid,
-    .inflation-grid,
-    .article-grid{
-        grid-template-columns:1fr;
-    }
-
-    .cards{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .nav{
-        overflow-x:auto;
-        justify-content:flex-start;
-        gap:25px;
-    }
-
-    .hero{
-        padding:70px 0;
-    }
-
-    .hero h1{
-        font-size:50px;
-    }
-
-    .community h2{
-        font-size:40px;
-    }
+.lessons,
+.feature-grid{
+grid-template-columns:1fr;
 }
 
-@media(max-width:500px){
+.hero{
+padding:70px 0;
+}
 
-    .cards{
-        grid-template-columns:1fr;
-    }
+.hero h1{
+font-size:50px;
+}
 
-    .logo{
-        font-size:22px;
-    }
+.title{
+font-size:38px;
+}
 
-    .instagram{
-        padding:10px 13px;
-        font-size:9px;
-    }
+.feature h2{
+font-size:40px;
+}
 
-    .title{
-        font-size:38px;
-    }
+.instagram{
+font-size:9px;
+padding:9px 11px;
+}
+
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
 
 <div class="container header">
 
-<a href="#" class="logo">
+<div class="logo">
 Young <span>Economics</span>
-</a>
+</div>
 
-<!-- INSTAGRAM BUTTON -->
 <a
+class="instagram"
 href="https://www.instagram.com/youngeconomics.id/"
-target="_blank"
-rel="noopener noreferrer"
-class="instagram">
-FOLLOW US · INSTAGRAM ↗
+target="_blank">
+
+INSTAGRAM ↗
+
 </a>
 
 </div>
-
-<nav>
-<div class="container nav">
-<a href="#bisnis">BISNIS</a>
-<a href="#pasar">PASAR</a>
-<a href="#uang">UANG</a>
-<a href="#investasi">BERINVESTASI</a>
-</div>
-</nav>
 
 </header>
 
@@ -441,33 +323,121 @@ FOLLOW US · INSTAGRAM ↗
 
 <section class="hero">
 
-<div class="container hero-grid">
-
-<div>
+<div class="container">
 
 <div class="label">
 YOUNG ECONOMICS INDONESIA
 </div>
 
 <h1>
-Understand<br>
-the <span>Economy.</span><br>
-Shape Tomorrow.
+Understand the<br>
+<span>Economy.</span>
 </h1>
 
 <p>
-Platform edukasi ekonomi untuk generasi muda Indonesia.
-Kami membuat ekonomi, bisnis, pasar, dan investasi
-lebih mudah dipahami.
+Belajar ekonomi dengan cara yang sederhana,
+relevan, dan mudah dipahami untuk generasi muda Indonesia.
 </p>
 
-<a href="#learn" class="button">
+<a href="#economics101" class="button">
 START LEARNING →
 </a>
 
 </div>
 
-<div class="hero-card">
+</section>
+
+
+<!-- ECONOMICS 101 -->
+
+<section class="economics" id="economics101">
+
+<div class="container">
+
+<div class="label">
+ECONOMICS 101
+</div>
+
+<h2 class="title">
+The basics you<br>
+need to know.
+</h2>
+
+<p class="intro">
+Mulai dari konsep paling dasar ekonomi sebelum
+mempelajari bisnis, pasar, dan investasi.
+</p>
+
+<div class="lessons">
+
+<div class="lesson">
+<div class="number">01 · BASICS</div>
+<h3>What Is Economics?</h3>
+<p>
+Ilmu tentang bagaimana manusia membuat pilihan
+ketika sumber daya terbatas.
+</p>
+</div>
+
+<div class="lesson">
+<div class="number">02 · DECISION</div>
+<h3>Opportunity Cost</h3>
+<p>
+Nilai dari alternatif terbaik yang kita korbankan
+ketika memilih sesuatu.
+</p>
+</div>
+
+<div class="lesson">
+<div class="number">03 · MARKET</div>
+<h3>Supply & Demand</h3>
+<p>
+Interaksi pembeli dan penjual yang membantu
+menentukan harga di pasar.
+</p>
+</div>
+
+<div class="lesson">
+<div class="number">04 · PRICES</div>
+<h3>Inflation</h3>
+<p>
+Kenaikan tingkat harga umum yang dapat
+mengurangi daya beli uang.
+</p>
+</div>
+
+<div class="lesson">
+<div class="number">05 · GROWTH</div>
+<h3>GDP</h3>
+<p>
+Salah satu ukuran nilai produksi barang dan jasa
+dalam suatu perekonomian.
+</p>
+</div>
+
+<div class="lesson">
+<div class="number">06 · MONEY</div>
+<h3>Interest Rates</h3>
+<p>
+Harga dari meminjam uang yang memengaruhi
+tabungan, kredit, dan investasi.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURE -->
+
+<section class="feature">
+
+<div class="container feature-grid">
+
+<div>
 
 <div class="label">
 ECONOMICS IN 30 SECONDS
@@ -478,181 +448,25 @@ Why does inflation matter?
 </h2>
 
 <p>
-Ketika harga barang meningkat secara terus-menerus,
-daya beli uang dapat menurun. Memahami inflasi membantu
-kita memahami keputusan ekonomi sehari-hari.
+Ketika harga naik sementara pendapatan tidak
+mengikuti kenaikan tersebut, daya beli masyarakat
+dapat menurun.
 </p>
 
 </div>
 
-</div>
-
-</section>
-
-
-<!-- TOPICS -->
-
-<section class="topics" id="learn">
-
-<div class="container">
-
-<div class="section-label">
-EXPLORE
-</div>
-
-<h2 class="title">
-Economics,<br>
-without the complexity.
-</h2>
-
-<div class="cards">
-
-<div class="card" id="bisnis">
-<div class="card-number">01 / BUSINESS</div>
-<h3>Business</h3>
-<p>
-Bagaimana perusahaan menciptakan nilai,
-menghasilkan keuntungan, dan berkembang.
-</p>
-</div>
-
-<div class="card" id="pasar">
-<div class="card-number">02 / MARKETS</div>
-<h3>Markets</h3>
-<p>
-Memahami supply, demand, harga,
-dan bagaimana pasar bekerja.
-</p>
-</div>
-
-<div class="card" id="uang">
-<div class="card-number">03 / MONEY</div>
-<h3>Money</h3>
-<p>
-Mengenal inflasi, suku bunga,
-bank sentral, dan uang.
-</p>
-</div>
-
-<div class="card" id="investasi">
-<div class="card-number">04 / INVESTING</div>
-<h3>Investing</h3>
-<p>
-Mengenal konsep investasi,
-risiko, dan pengambilan keputusan.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ARTICLES -->
-
-<section class="articles">
-
-<div class="container">
-
-<div class="section-label">
-LATEST THINKING
-</div>
-
-<h2 class="title">
-Ideas worth<br>
-understanding.
-</h2>
-
-<div class="article-grid">
-
-<div class="article">
+<div class="card">
 
 <div class="label">
-ECONOMICS
+SIMPLE IDEA
 </div>
-
-<h3>
-Kenapa harga barang bisa naik?
-</h3>
-
-<p>
-Supply, demand, inflasi, dan kebijakan ekonomi
-memiliki peran besar terhadap harga.
-</p>
-
-<a href="#" class="read">
-READ ARTICLE →
-</a>
-
-</div>
-
-<div class="article">
-
-<div class="label">
-BUSINESS
-</div>
-
-<h3>
-Bagaimana bisnis menghasilkan keuntungan?
-</h3>
-
-<p>
-Pelajari revenue, cost, profit,
-dan konsep dasar bisnis.
-</p>
-
-<a href="#" class="read">
-READ ARTICLE →
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- INFLATION -->
-
-<section class="inflation">
-
-<div class="container inflation-grid">
-
-<div>
-
-<div class="section-label">
-INFLATION EXPLAINED
-</div>
-
-<h2>
-Your money<br>
-changes over time.
-</h2>
-
-<p>
-Inflasi adalah kenaikan harga barang dan jasa
-secara umum dan terus-menerus.
-Dampaknya dapat mengurangi daya beli uang.
-</p>
-
-</div>
-
-<div class="stat">
-
-<small>
-SIMPLE ECONOMIC IDEA
-</small>
 
 <strong>
 PRICE ↑
 </strong>
 
 <p>
-Harga naik → daya beli uang turun.
+Harga naik → daya beli uang dapat menurun.
 </p>
 
 </div>
@@ -678,18 +492,14 @@ of economic thinkers.
 </h2>
 
 <p>
-Ikuti Young Economics Indonesia dan temukan
-konten ekonomi, bisnis, pasar, dan investasi
-yang dibuat untuk generasi muda.
+Ikuti konten ekonomi, bisnis, pasar,
+dan investasi bersama Young Economics Indonesia.
 </p>
 
-<!-- INSTAGRAM UTAMA -->
-
 <a
+class="follow"
 href="https://www.instagram.com/youngeconomics.id/"
-target="_blank"
-rel="noopener noreferrer"
-class="community-button">
+target="_blank">
 
 FOLLOW @YOUNGECONOMICS.ID ↗
 
@@ -702,9 +512,7 @@ FOLLOW @YOUNGECONOMICS.ID ↗
 
 <footer>
 
-© 2026
-<strong>Young Economics Indonesia</strong>.
-All rights reserved.
+© 2026 <strong>Young Economics Indonesia</strong>
 
 </footer>
 
