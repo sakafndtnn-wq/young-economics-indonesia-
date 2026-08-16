@@ -6,26 +6,13 @@
 
 <title>Young Economics Indonesia</title>
 
-<meta name="description" content="Young Economics Indonesia — memahami ekonomi dengan cara yang sederhana, relevan, dan modern.">
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
-:root{
-    --black:#050505;
-    --dark:#101010;
-    --cream:#f5f0e6;
-    --gold:#d8b46a;
-    --gold-dark:#9f7832;
-    --white:#ffffff;
-    --gray:#999;
-    --line:#ddd5c6;
-}
-
 *{
+    box-sizing:border-box;
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
 
 html{
@@ -33,14 +20,12 @@ html{
 }
 
 body{
-    background:var(--cream);
-    color:var(--black);
+    background:#f5f0e6;
+    color:#080808;
     font-family:'DM Sans',sans-serif;
-    line-height:1.6;
 }
 
 a{
-    color:inherit;
     text-decoration:none;
 }
 
@@ -50,19 +35,18 @@ a{
     margin:auto;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 header{
-    background:var(--black);
+    background:#050505;
     color:white;
     position:sticky;
     top:0;
-    z-index:1000;
-    border-bottom:1px solid #222;
+    z-index:999;
 }
 
 .header{
-    min-height:80px;
+    height:80px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -71,30 +55,32 @@ header{
 .logo{
     font-family:'Playfair Display',serif;
     font-size:28px;
+    color:white;
 }
 
 .logo span{
-    color:var(--gold);
+    color:#d8b46a;
 }
 
 .instagram{
-    background:var(--cream);
-    color:var(--black);
-    border:1px solid var(--gold);
-    padding:13px 20px;
+    background:#f5f0e6;
+    color:#050505;
+    padding:13px 22px;
+    border:1px solid #d8b46a;
     font-size:11px;
     font-weight:700;
-    letter-spacing:1.7px;
+    letter-spacing:2px;
     transition:.3s;
 }
 
 .instagram:hover{
-    background:var(--gold);
-    transform:translateY(-2px);
+    background:#d8b46a;
 }
 
+/* NAVIGATION */
+
 nav{
-    background:var(--gold);
+    background:#d8b46a;
 }
 
 .nav{
@@ -102,403 +88,285 @@ nav{
     justify-content:center;
     gap:45px;
     padding:15px;
-    overflow-x:auto;
 }
 
 .nav a{
+    color:#050505;
     font-size:12px;
     font-weight:700;
     letter-spacing:2px;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
-    background:var(--black);
+    background:#050505;
     color:white;
     padding:100px 0;
 }
 
 .hero-grid{
     display:grid;
-    grid-template-columns:1.25fr .75fr;
-    gap:65px;
+    grid-template-columns:1.3fr .7fr;
+    gap:60px;
     align-items:center;
 }
 
 .label{
-    color:var(--gold);
+    color:#d8b46a;
     font-size:12px;
-    font-weight:700;
     letter-spacing:3px;
+    font-weight:700;
     margin-bottom:20px;
 }
 
 .hero h1{
     font-family:'Playfair Display',serif;
     font-size:clamp(48px,7vw,82px);
-    line-height:1.02;
+    line-height:1;
 }
 
 .hero h1 span{
-    color:var(--gold);
+    color:#d8b46a;
 }
 
-.hero-description{
+.hero p{
     color:#aaa;
-    max-width:590px;
+    max-width:580px;
     margin-top:25px;
     font-size:17px;
 }
 
-.hero-button{
+.button{
     display:inline-block;
-    margin-top:32px;
+    margin-top:30px;
+    background:#d8b46a;
+    color:#050505;
     padding:15px 25px;
-    background:var(--gold);
-    color:var(--black);
-    font-size:12px;
     font-weight:700;
+    font-size:12px;
     letter-spacing:1px;
 }
 
 .hero-card{
-    background:#101010;
     border:1px solid #333;
     padding:35px;
+    background:#101010;
 }
 
 .hero-card h2{
     font-family:'Playfair Display',serif;
-    font-size:34px;
-    line-height:1.15;
+    font-size:32px;
     margin:15px 0;
 }
 
 .hero-card p{
-    color:#aaa;
     font-size:14px;
 }
 
-/* ================= SECTION ================= */
+/* SECTION */
 
 section{
-    padding:90px 0;
+    padding:85px 0;
 }
 
 .section-label{
-    color:var(--gold-dark);
+    color:#a07830;
     font-size:12px;
     font-weight:700;
     letter-spacing:3px;
 }
 
-.section-title{
+.title{
     font-family:'Playfair Display',serif;
     font-size:48px;
     line-height:1.1;
-    margin:15px 0 45px;
+    margin:15px 0 40px;
 }
 
-/* ================= ECONOMICS 101 ================= */
-
-.economics101{
-    background:var(--cream);
-}
-
-.intro{
-    max-width:700px;
-    color:#666;
-    margin-top:-25px;
-    margin-bottom:45px;
-}
-
-.lessons{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
-}
-
-.lesson{
-    background:white;
-    border:1px solid var(--line);
-    padding:32px;
-    transition:.3s;
-}
-
-.lesson:hover{
-    transform:translateY(-5px);
-    border-color:var(--gold);
-}
-
-.lesson-number{
-    color:var(--gold-dark);
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:2px;
-}
-
-.lesson h3{
-    font-family:'Playfair Display',serif;
-    font-size:28px;
-    margin:12px 0;
-}
-
-.lesson p{
-    color:#666;
-    font-size:14px;
-}
-
-.lesson a{
-    display:inline-block;
-    margin-top:20px;
-    color:var(--gold-dark);
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:1px;
-}
-
-/* ================= LESSON DETAIL ================= */
-
-.detail{
-    background:#111;
-    color:white;
-}
-
-.detail-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-}
-
-.detail-card{
-    border:1px solid #333;
-    padding:35px;
-}
-
-.detail-card h3{
-    font-family:'Playfair Display',serif;
-    font-size:30px;
-    margin:12px 0 15px;
-}
-
-.detail-card p{
-    color:#aaa;
-}
-
-.key{
-    display:inline-block;
-    margin-top:22px;
-    padding:9px 13px;
-    background:var(--gold);
-    color:var(--black);
-    font-size:11px;
-    font-weight:700;
-}
-
-/* ================= ECONOMICS IN 30 SECONDS ================= */
-
-.seconds{
-    background:var(--gold);
-}
-
-.seconds-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:55px;
-    align-items:center;
-}
-
-.seconds h2{
-    font-family:'Playfair Display',serif;
-    font-size:52px;
-    line-height:1.05;
-}
-
-.seconds p{
-    margin-top:20px;
-    max-width:550px;
-}
-
-.formula{
-    background:var(--black);
-    color:white;
-    padding:42px;
-}
-
-.formula small{
-    color:var(--gold);
-    letter-spacing:2px;
-}
-
-.formula strong{
-    display:block;
-    font-family:'Playfair Display',serif;
-    font-size:42px;
-    margin:18px 0;
-}
-
-/* ================= TOPICS ================= */
+/* TOPICS */
 
 .topics{
-    background:white;
+    background:#f5f0e6;
 }
 
-.topic-grid{
+.cards{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:18px;
 }
 
-.topic{
-    border:1px solid var(--line);
+.card{
+    background:white;
+    border:1px solid #ddd5c6;
     padding:30px 25px;
+    transition:.3s;
 }
 
-.topic-number{
-    color:var(--gold-dark);
+.card:hover{
+    transform:translateY(-6px);
+    border-color:#d8b46a;
+}
+
+.card-number{
+    color:#a07830;
     font-size:12px;
     font-weight:700;
 }
 
-.topic h3{
+.card h3{
     font-family:'Playfair Display',serif;
     font-size:26px;
-    margin:15px 0 10px;
+    margin:15px 0;
 }
 
-.topic p{
+.card p{
     color:#666;
     font-size:14px;
 }
 
-/* ================= QUIZ ================= */
+/* ARTICLES */
 
-.quiz{
-    background:var(--cream);
+.articles{
+    background:#111;
+    color:white;
 }
 
-.quiz-box{
-    max-width:780px;
-    margin:auto;
-    background:white;
-    border:1px solid var(--line);
-    padding:45px;
-}
-
-.quiz-box h2{
-    font-family:'Playfair Display',serif;
-    font-size:38px;
-    margin-bottom:30px;
-}
-
-.question{
-    font-size:19px;
-    font-weight:600;
-    margin-bottom:22px;
-}
-
-.answers{
+.article-grid{
     display:grid;
-    gap:12px;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
 }
 
-.answer{
-    background:white;
-    border:1px solid #ccc;
-    padding:15px;
-    text-align:left;
-    font-family:inherit;
-    cursor:pointer;
-    transition:.25s;
+.article{
+    border:1px solid #333;
+    padding:35px;
 }
 
-.answer:hover{
-    background:var(--gold);
-    border-color:var(--gold);
+.article h3{
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    margin:15px 0;
 }
 
-.quiz-result{
-    margin-top:22px;
+.article p{
+    color:#aaa;
+}
+
+.read{
+    display:inline-block;
+    margin-top:25px;
+    color:#d8b46a;
     font-weight:700;
 }
 
-.quiz-progress{
-    color:#888;
-    margin-top:18px;
-    font-size:13px;
+/* INFLATION */
+
+.inflation{
+    background:#d8b46a;
 }
 
-/* ================= COMMUNITY ================= */
+.inflation-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.inflation h2{
+    font-family:'Playfair Display',serif;
+    font-size:52px;
+    line-height:1.05;
+}
+
+.inflation p{
+    margin-top:20px;
+    max-width:550px;
+}
+
+.stat{
+    background:#080808;
+    color:white;
+    padding:40px;
+}
+
+.stat small{
+    color:#d8b46a;
+    letter-spacing:2px;
+}
+
+.stat strong{
+    display:block;
+    color:white;
+    font-family:'Playfair Display',serif;
+    font-size:65px;
+    margin:10px 0;
+}
+
+/* COMMUNITY */
 
 .community{
-    background:var(--black);
+    background:#050505;
     color:white;
     text-align:center;
 }
 
 .community h2{
-    max-width:800px;
-    margin:15px auto 20px;
     font-family:'Playfair Display',serif;
-    font-size:54px;
-    line-height:1.08;
+    font-size:55px;
+    max-width:750px;
+    margin:20px auto;
 }
 
 .community p{
-    max-width:620px;
-    margin:auto;
     color:#aaa;
+    max-width:600px;
+    margin:auto;
 }
 
 .community-button{
     display:inline-block;
-    margin-top:32px;
-    padding:16px 27px;
-    background:var(--cream);
-    color:var(--black);
-    border:1px solid var(--gold);
+    margin-top:30px;
+    background:#f5f0e6;
+    color:#050505;
+    padding:16px 28px;
+    border:1px solid #d8b46a;
     font-weight:700;
     letter-spacing:1px;
-    transition:.3s;
 }
 
-.community-button:hover{
-    background:var(--gold);
-    transform:translateY(-2px);
-}
-
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer{
-    background:var(--black);
+    background:#050505;
     color:#777;
-    border-top:1px solid #222;
     text-align:center;
     padding:30px;
-    font-size:13px;
+    border-top:1px solid #222;
 }
 
 footer strong{
     color:white;
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 
 @media(max-width:800px){
 
     .hero-grid,
-    .seconds-grid,
-    .detail-grid{
+    .inflation-grid,
+    .article-grid{
         grid-template-columns:1fr;
     }
 
-    .lessons{
-        grid-template-columns:1fr;
-    }
-
-    .topic-grid{
+    .cards{
         grid-template-columns:1fr 1fr;
+    }
+
+    .nav{
+        overflow-x:auto;
+        justify-content:flex-start;
+        gap:25px;
     }
 
     .hero{
@@ -512,15 +380,11 @@ footer strong{
     .community h2{
         font-size:40px;
     }
-
-    .nav{
-        justify-content:flex-start;
-    }
 }
 
 @media(max-width:500px){
 
-    .topic-grid{
+    .cards{
         grid-template-columns:1fr;
     }
 
@@ -529,24 +393,18 @@ footer strong{
     }
 
     .instagram{
-        padding:10px 12px;
-        font-size:8px;
+        padding:10px 13px;
+        font-size:9px;
     }
 
-    .section-title{
+    .title{
         font-size:38px;
-    }
-
-    .quiz-box{
-        padding:28px 20px;
     }
 }
 </style>
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header>
 
@@ -556,23 +414,299 @@ footer strong{
 Young <span>Economics</span>
 </a>
 
+<!-- INSTAGRAM BUTTON -->
 <a
 href="https://www.instagram.com/youngeconomics.id/"
 target="_blank"
 rel="noopener noreferrer"
 class="instagram">
-
 FOLLOW US · INSTAGRAM ↗
-
 </a>
 
 </div>
 
 <nav>
 <div class="container nav">
+<a href="#bisnis">BISNIS</a>
+<a href="#pasar">PASAR</a>
+<a href="#uang">UANG</a>
+<a href="#investasi">BERINVESTASI</a>
+</div>
+</nav>
 
-<a href="#economics101">ECONOMICS 101</a>
-<a href="#business">BUSINESS</a>
-<a href="#markets">MARKETS</a>
-<a href="#money">MONEY</a>
-<a href="#investing
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="label">
+YOUNG ECONOMICS INDONESIA
+</div>
+
+<h1>
+Understand<br>
+the <span>Economy.</span><br>
+Shape Tomorrow.
+</h1>
+
+<p>
+Platform edukasi ekonomi untuk generasi muda Indonesia.
+Kami membuat ekonomi, bisnis, pasar, dan investasi
+lebih mudah dipahami.
+</p>
+
+<a href="#learn" class="button">
+START LEARNING →
+</a>
+
+</div>
+
+<div class="hero-card">
+
+<div class="label">
+ECONOMICS IN 30 SECONDS
+</div>
+
+<h2>
+Why does inflation matter?
+</h2>
+
+<p>
+Ketika harga barang meningkat secara terus-menerus,
+daya beli uang dapat menurun. Memahami inflasi membantu
+kita memahami keputusan ekonomi sehari-hari.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TOPICS -->
+
+<section class="topics" id="learn">
+
+<div class="container">
+
+<div class="section-label">
+EXPLORE
+</div>
+
+<h2 class="title">
+Economics,<br>
+without the complexity.
+</h2>
+
+<div class="cards">
+
+<div class="card" id="bisnis">
+<div class="card-number">01 / BUSINESS</div>
+<h3>Business</h3>
+<p>
+Bagaimana perusahaan menciptakan nilai,
+menghasilkan keuntungan, dan berkembang.
+</p>
+</div>
+
+<div class="card" id="pasar">
+<div class="card-number">02 / MARKETS</div>
+<h3>Markets</h3>
+<p>
+Memahami supply, demand, harga,
+dan bagaimana pasar bekerja.
+</p>
+</div>
+
+<div class="card" id="uang">
+<div class="card-number">03 / MONEY</div>
+<h3>Money</h3>
+<p>
+Mengenal inflasi, suku bunga,
+bank sentral, dan uang.
+</p>
+</div>
+
+<div class="card" id="investasi">
+<div class="card-number">04 / INVESTING</div>
+<h3>Investing</h3>
+<p>
+Mengenal konsep investasi,
+risiko, dan pengambilan keputusan.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ARTICLES -->
+
+<section class="articles">
+
+<div class="container">
+
+<div class="section-label">
+LATEST THINKING
+</div>
+
+<h2 class="title">
+Ideas worth<br>
+understanding.
+</h2>
+
+<div class="article-grid">
+
+<div class="article">
+
+<div class="label">
+ECONOMICS
+</div>
+
+<h3>
+Kenapa harga barang bisa naik?
+</h3>
+
+<p>
+Supply, demand, inflasi, dan kebijakan ekonomi
+memiliki peran besar terhadap harga.
+</p>
+
+<a href="#" class="read">
+READ ARTICLE →
+</a>
+
+</div>
+
+<div class="article">
+
+<div class="label">
+BUSINESS
+</div>
+
+<h3>
+Bagaimana bisnis menghasilkan keuntungan?
+</h3>
+
+<p>
+Pelajari revenue, cost, profit,
+dan konsep dasar bisnis.
+</p>
+
+<a href="#" class="read">
+READ ARTICLE →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INFLATION -->
+
+<section class="inflation">
+
+<div class="container inflation-grid">
+
+<div>
+
+<div class="section-label">
+INFLATION EXPLAINED
+</div>
+
+<h2>
+Your money<br>
+changes over time.
+</h2>
+
+<p>
+Inflasi adalah kenaikan harga barang dan jasa
+secara umum dan terus-menerus.
+Dampaknya dapat mengurangi daya beli uang.
+</p>
+
+</div>
+
+<div class="stat">
+
+<small>
+SIMPLE ECONOMIC IDEA
+</small>
+
+<strong>
+PRICE ↑
+</strong>
+
+<p>
+Harga naik → daya beli uang turun.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- COMMUNITY -->
+
+<section class="community">
+
+<div class="container">
+
+<div class="label">
+JOIN YOUNG ECONOMICS
+</div>
+
+<h2>
+Build the next generation
+of economic thinkers.
+</h2>
+
+<p>
+Ikuti Young Economics Indonesia dan temukan
+konten ekonomi, bisnis, pasar, dan investasi
+yang dibuat untuk generasi muda.
+</p>
+
+<!-- INSTAGRAM UTAMA -->
+
+<a
+href="https://www.instagram.com/youngeconomics.id/"
+target="_blank"
+rel="noopener noreferrer"
+class="community-button">
+
+FOLLOW @YOUNGECONOMICS.ID ↗
+
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026
+<strong>Young Economics Indonesia</strong>.
+All rights reserved.
+
+</footer>
+
+</body>
+</html>
