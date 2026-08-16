@@ -6,517 +6,540 @@
 
 <title>Young Economics Indonesia</title>
 
-<meta name="description" content="Young Economics Indonesia — ruang belajar ekonomi untuk generasi muda Indonesia.">
+<meta name="description" content="Young Economics Indonesia — memahami ekonomi dengan cara yang sederhana, relevan, dan modern.">
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 :root{
-  --black:#050505;
-  --dark:#101010;
-  --cream:#f5f0e6;
-  --gold:#d8b46a;
-  --white:#ffffff;
-  --gray:#aaa;
+    --black:#050505;
+    --dark:#101010;
+    --cream:#f5f0e6;
+    --gold:#d8b46a;
+    --gold-dark:#9f7832;
+    --white:#ffffff;
+    --gray:#999;
+    --line:#ddd5c6;
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:'DM Sans',sans-serif;
-  background:var(--cream);
-  color:var(--black);
-  line-height:1.6;
+    background:var(--cream);
+    color:var(--black);
+    font-family:'DM Sans',sans-serif;
+    line-height:1.6;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+    color:inherit;
+    text-decoration:none;
 }
 
 .container{
-  width:min(1120px,92%);
-  margin:auto;
+    width:92%;
+    max-width:1150px;
+    margin:auto;
 }
 
 /* ================= HEADER ================= */
 
 header{
-  background:var(--black);
-  color:white;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  border-bottom:1px solid #222;
+    background:var(--black);
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid #222;
 }
 
-.header-inner{
-  height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+.header{
+    min-height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
-  font-family:'Playfair Display',serif;
-  font-size:29px;
-  color:white;
+    font-family:'Playfair Display',serif;
+    font-size:28px;
 }
 
 .logo span{
-  color:var(--gold);
+    color:var(--gold);
 }
 
-.follow{
-  background:white;
-  color:#111;
-  padding:14px 25px;
-  font-size:13px;
-  font-weight:700;
-  letter-spacing:2px;
-  transition:.3s;
+.instagram{
+    background:var(--cream);
+    color:var(--black);
+    border:1px solid var(--gold);
+    padding:13px 20px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1.7px;
+    transition:.3s;
 }
 
-.follow:hover{
-  background:var(--gold);
+.instagram:hover{
+    background:var(--gold);
+    transform:translateY(-2px);
 }
 
-/* ================= NAV ================= */
+nav{
+    background:var(--gold);
+}
 
 .nav{
-  background:var(--gold);
-  color:#111;
-  overflow-x:auto;
-  white-space:nowrap;
-}
-
-.nav-inner{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  min-height:52px;
+    display:flex;
+    justify-content:center;
+    gap:45px;
+    padding:15px;
+    overflow-x:auto;
 }
 
 .nav a{
-  padding:0 25px;
-  font-size:13px;
-  font-weight:700;
-  letter-spacing:2px;
-}
-
-.nav a:hover{
-  opacity:.55;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
 }
 
 /* ================= HERO ================= */
 
 .hero{
-  background:var(--black);
-  color:white;
-  padding:95px 0 105px;
+    background:var(--black);
+    color:white;
+    padding:100px 0;
 }
 
 .hero-grid{
-  display:grid;
-  grid-template-columns:1.3fr .7fr;
-  gap:60px;
-  align-items:center;
+    display:grid;
+    grid-template-columns:1.25fr .75fr;
+    gap:65px;
+    align-items:center;
 }
 
-.eyebrow{
-  color:var(--gold);
-  font-size:13px;
-  font-weight:700;
-  letter-spacing:3px;
-  margin-bottom:20px;
+.label{
+    color:var(--gold);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:3px;
+    margin-bottom:20px;
 }
 
 .hero h1{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(45px,7vw,78px);
-  line-height:1.05;
-  margin-bottom:25px;
+    font-family:'Playfair Display',serif;
+    font-size:clamp(48px,7vw,82px);
+    line-height:1.02;
 }
 
 .hero h1 span{
-  color:var(--gold);
+    color:var(--gold);
 }
 
-.hero p{
-  color:#c5c5c5;
-  max-width:580px;
-  font-size:17px;
+.hero-description{
+    color:#aaa;
+    max-width:590px;
+    margin-top:25px;
+    font-size:17px;
 }
 
 .hero-button{
-  display:inline-block;
-  margin-top:35px;
-  background:var(--gold);
-  padding:15px 25px;
-  color:#111;
-  font-weight:700;
-  letter-spacing:1px;
+    display:inline-block;
+    margin-top:32px;
+    padding:15px 25px;
+    background:var(--gold);
+    color:var(--black);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
 }
 
 .hero-card{
-  border:1px solid #383838;
-  padding:35px;
-  background:#101010;
-}
-
-.hero-card small{
-  color:var(--gold);
-  letter-spacing:2px;
+    background:#101010;
+    border:1px solid #333;
+    padding:35px;
 }
 
 .hero-card h2{
-  font-family:'Playfair Display',serif;
-  font-size:34px;
-  margin:15px 0;
+    font-family:'Playfair Display',serif;
+    font-size:34px;
+    line-height:1.15;
+    margin:15px 0;
 }
 
 .hero-card p{
-  font-size:14px;
+    color:#aaa;
+    font-size:14px;
 }
 
 /* ================= SECTION ================= */
 
 section{
-  padding:85px 0;
+    padding:90px 0;
 }
 
 .section-label{
-  color:#a27a2c;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:3px;
-  margin-bottom:10px;
+    color:var(--gold-dark);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:3px;
 }
 
 .section-title{
-  font-family:'Playfair Display',serif;
-  font-size:45px;
-  line-height:1.15;
-  margin-bottom:45px;
+    font-family:'Playfair Display',serif;
+    font-size:48px;
+    line-height:1.1;
+    margin:15px 0 45px;
+}
+
+/* ================= ECONOMICS 101 ================= */
+
+.economics101{
+    background:var(--cream);
+}
+
+.intro{
+    max-width:700px;
+    color:#666;
+    margin-top:-25px;
+    margin-bottom:45px;
+}
+
+.lessons{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.lesson{
+    background:white;
+    border:1px solid var(--line);
+    padding:32px;
+    transition:.3s;
+}
+
+.lesson:hover{
+    transform:translateY(-5px);
+    border-color:var(--gold);
+}
+
+.lesson-number{
+    color:var(--gold-dark);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.lesson h3{
+    font-family:'Playfair Display',serif;
+    font-size:28px;
+    margin:12px 0;
+}
+
+.lesson p{
+    color:#666;
+    font-size:14px;
+}
+
+.lesson a{
+    display:inline-block;
+    margin-top:20px;
+    color:var(--gold-dark);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* ================= LESSON DETAIL ================= */
+
+.detail{
+    background:#111;
+    color:white;
+}
+
+.detail-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.detail-card{
+    border:1px solid #333;
+    padding:35px;
+}
+
+.detail-card h3{
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    margin:12px 0 15px;
+}
+
+.detail-card p{
+    color:#aaa;
+}
+
+.key{
+    display:inline-block;
+    margin-top:22px;
+    padding:9px 13px;
+    background:var(--gold);
+    color:var(--black);
+    font-size:11px;
+    font-weight:700;
+}
+
+/* ================= ECONOMICS IN 30 SECONDS ================= */
+
+.seconds{
+    background:var(--gold);
+}
+
+.seconds-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.seconds h2{
+    font-family:'Playfair Display',serif;
+    font-size:52px;
+    line-height:1.05;
+}
+
+.seconds p{
+    margin-top:20px;
+    max-width:550px;
+}
+
+.formula{
+    background:var(--black);
+    color:white;
+    padding:42px;
+}
+
+.formula small{
+    color:var(--gold);
+    letter-spacing:2px;
+}
+
+.formula strong{
+    display:block;
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin:18px 0;
 }
 
 /* ================= TOPICS ================= */
 
 .topics{
-  background:var(--cream);
+    background:white;
 }
 
 .topic-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
 }
 
 .topic{
-  background:white;
-  padding:30px 25px;
-  border:1px solid #ded8ca;
-  transition:.3s;
-}
-
-.topic:hover{
-  transform:translateY(-6px);
-  border-color:var(--gold);
+    border:1px solid var(--line);
+    padding:30px 25px;
 }
 
 .topic-number{
-  color:#b28b46;
-  font-size:13px;
-  font-weight:700;
+    color:var(--gold-dark);
+    font-size:12px;
+    font-weight:700;
 }
 
 .topic h3{
-  font-family:'Playfair Display',serif;
-  font-size:25px;
-  margin:18px 0 10px;
+    font-family:'Playfair Display',serif;
+    font-size:26px;
+    margin:15px 0 10px;
 }
 
 .topic p{
-  font-size:14px;
-  color:#666;
-}
-
-/* ================= FEATURE ================= */
-
-.feature{
-  background:#111;
-  color:white;
-}
-
-.feature-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-}
-
-.feature-box{
-  border:1px solid #333;
-  padding:35px;
-}
-
-.feature-box .tag{
-  color:var(--gold);
-  font-size:12px;
-  letter-spacing:2px;
-  font-weight:700;
-}
-
-.feature-box h3{
-  font-family:'Playfair Display',serif;
-  font-size:32px;
-  margin:15px 0;
-}
-
-.feature-box p{
-  color:#bbb;
-  font-size:15px;
-}
-
-.read{
-  display:inline-block;
-  margin-top:25px;
-  color:var(--gold);
-  font-weight:700;
-}
-
-/* ================= INFLATION ================= */
-
-.inflation{
-  background:var(--gold);
-}
-
-.inflation-box{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:50px;
-  align-items:center;
-}
-
-.inflation h2{
-  font-family:'Playfair Display',serif;
-  font-size:50px;
-  line-height:1.1;
-}
-
-.inflation p{
-  margin-top:20px;
-  max-width:520px;
-}
-
-.stat{
-  background:#111;
-  color:white;
-  padding:35px;
-}
-
-.stat-label{
-  color:var(--gold);
-  font-size:12px;
-  letter-spacing:2px;
-}
-
-.stat-number{
-  font-family:'Playfair Display',serif;
-  font-size:65px;
-  margin:10px 0;
+    color:#666;
+    font-size:14px;
 }
 
 /* ================= QUIZ ================= */
 
 .quiz{
-  background:var(--cream);
+    background:var(--cream);
 }
 
 .quiz-box{
-  max-width:750px;
-  margin:auto;
-  background:white;
-  padding:45px;
-  border:1px solid #ded8ca;
+    max-width:780px;
+    margin:auto;
+    background:white;
+    border:1px solid var(--line);
+    padding:45px;
 }
 
 .quiz-box h2{
-  font-family:'Playfair Display',serif;
-  font-size:36px;
-  margin-bottom:30px;
+    font-family:'Playfair Display',serif;
+    font-size:38px;
+    margin-bottom:30px;
 }
 
-#question{
-  font-size:20px;
-  font-weight:600;
-  margin-bottom:25px;
+.question{
+    font-size:19px;
+    font-weight:600;
+    margin-bottom:22px;
 }
 
 .answers{
-  display:grid;
-  gap:12px;
+    display:grid;
+    gap:12px;
 }
 
 .answer{
-  width:100%;
-  border:1px solid #ccc;
-  background:white;
-  padding:15px;
-  text-align:left;
-  cursor:pointer;
-  font-family:inherit;
-  transition:.2s;
+    background:white;
+    border:1px solid #ccc;
+    padding:15px;
+    text-align:left;
+    font-family:inherit;
+    cursor:pointer;
+    transition:.25s;
 }
 
 .answer:hover{
-  background:var(--gold);
-  border-color:var(--gold);
+    background:var(--gold);
+    border-color:var(--gold);
 }
 
-#result{
-  margin-top:25px;
-  font-weight:700;
+.quiz-result{
+    margin-top:22px;
+    font-weight:700;
 }
 
-.progress{
-  margin-top:25px;
-  color:#888;
-  font-size:13px;
+.quiz-progress{
+    color:#888;
+    margin-top:18px;
+    font-size:13px;
 }
 
 /* ================= COMMUNITY ================= */
 
 .community{
-  background:#111;
-  color:white;
-  text-align:center;
+    background:var(--black);
+    color:white;
+    text-align:center;
 }
 
 .community h2{
-  font-family:'Playfair Display',serif;
-  font-size:50px;
-  max-width:750px;
-  margin:0 auto 20px;
+    max-width:800px;
+    margin:15px auto 20px;
+    font-family:'Playfair Display',serif;
+    font-size:54px;
+    line-height:1.08;
 }
 
 .community p{
-  color:#aaa;
-  max-width:600px;
-  margin:auto;
+    max-width:620px;
+    margin:auto;
+    color:#aaa;
 }
 
-.social{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  flex-wrap:wrap;
-  margin-top:30px;
+.community-button{
+    display:inline-block;
+    margin-top:32px;
+    padding:16px 27px;
+    background:var(--cream);
+    color:var(--black);
+    border:1px solid var(--gold);
+    font-weight:700;
+    letter-spacing:1px;
+    transition:.3s;
 }
 
-.social a{
-  border:1px solid #444;
-  padding:13px 22px;
-  color:var(--gold);
-  font-weight:700;
+.community-button:hover{
+    background:var(--gold);
+    transform:translateY(-2px);
 }
 
 /* ================= FOOTER ================= */
 
 footer{
-  background:#050505;
-  color:#777;
-  padding:30px 0;
-  text-align:center;
-  font-size:13px;
+    background:var(--black);
+    color:#777;
+    border-top:1px solid #222;
+    text-align:center;
+    padding:30px;
+    font-size:13px;
 }
 
 footer strong{
-  color:white;
+    color:white;
 }
 
 /* ================= MOBILE ================= */
 
 @media(max-width:800px){
 
-  .header-inner{
-    height:72px;
-  }
+    .hero-grid,
+    .seconds-grid,
+    .detail-grid{
+        grid-template-columns:1fr;
+    }
 
-  .logo{
-    font-size:23px;
-  }
+    .lessons{
+        grid-template-columns:1fr;
+    }
 
-  .follow{
-    padding:11px 15px;
-    font-size:11px;
-  }
+    .topic-grid{
+        grid-template-columns:1fr 1fr;
+    }
 
-  .nav-inner{
-    justify-content:flex-start;
-    width:max-content;
-  }
+    .hero{
+        padding:70px 0;
+    }
 
-  .nav a{
-    padding:0 17px;
-    font-size:11px;
-  }
+    .hero h1{
+        font-size:50px;
+    }
 
-  .hero{
-    padding:65px 0 75px;
-  }
+    .community h2{
+        font-size:40px;
+    }
 
-  .hero-grid,
-  .feature-grid,
-  .inflation-box{
-    grid-template-columns:1fr;
-  }
-
-  .hero h1{
-    font-size:48px;
-  }
-
-  .topic-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  section{
-    padding:65px 0;
-  }
-
-  .section-title{
-    font-size:37px;
-  }
-
-  .inflation h2{
-    font-size:40px;
-  }
-
-  .community h2{
-    font-size:38px;
-  }
+    .nav{
+        justify-content:flex-start;
+    }
 }
 
-@media(max-width:480px){
+@media(max-width:500px){
 
-  .topic-grid{
-    grid-template-columns:1fr;
-  }
+    .topic-grid{
+        grid-template-columns:1fr;
+    }
 
-  .hero-card{
-    padding:25px;
-  }
+    .logo{
+        font-size:22px;
+    }
 
-  .quiz-box{
-    padding:28px 20px;
-  }
+    .instagram{
+        padding:10px 12px;
+        font-size:8px;
+    }
+
+    .section-title{
+        font-size:38px;
+    }
+
+    .quiz-box{
+        padding:28px 20px;
+    }
 }
 </style>
 </head>
@@ -526,398 +549,30 @@ footer strong{
 <!-- HEADER -->
 
 <header>
-  <div class="container header-inner">
-    <a href="#" class="logo">
-      <span>Ekonomi</span> Muda
-    </a>
 
-    <a href="#community" class="follow">
-      IKUTI KAMI
-    </a>
-  </div>
+<div class="container header">
 
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a href="#bisnis">BISNIS</a>
-      <a href="#pasar">PASAR</a>
-      <a href="#uang">UANG</a>
-      <a href="#investasi">BERINVESTASI</a>
-    </div>
-  </nav>
-</header>
+<a href="#" class="logo">
+Young <span>Economics</span>
+</a>
 
+<a
+href="https://www.instagram.com/youngeconomics.id/"
+target="_blank"
+rel="noopener noreferrer"
+class="instagram">
 
-<!-- HERO -->
+FOLLOW US · INSTAGRAM ↗
 
-<section class="hero">
-  <div class="container hero-grid">
+</a>
 
-    <div>
-      <div class="eyebrow">YOUNG ECONOMICS INDONESIA</div>
+</div>
 
-      <h1>
-        Understand<br>
-        <span>Economics.</span><br>
-        Shape Tomorrow.
-      </h1>
+<nav>
+<div class="container nav">
 
-      <p>
-        Platform edukasi ekonomi untuk generasi muda Indonesia.
-        Kami membuat ekonomi, bisnis, pasar, dan investasi
-        lebih mudah dipahami.
-      </p>
-
-      <a href="#topics" class="hero-button">
-        MULAI BELAJAR →
-      </a>
-    </div>
-
-    <div class="hero-card">
-      <small>ECONOMICS IN 30 SECONDS</small>
-
-      <h2>
-        Why does inflation matter?
-      </h2>
-
-      <p>
-        Ketika harga barang naik secara terus-menerus,
-        daya beli uang kita menurun. Itulah mengapa
-        memahami inflasi penting bagi kehidupan sehari-hari.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- TOPICS -->
-
-<section class="topics" id="topics">
-  <div class="container">
-
-    <div class="section-label">EXPLORE</div>
-
-    <h2 class="section-title">
-      Ekonomi tanpa<br>
-      bahasa yang rumit.
-    </h2>
-
-    <div class="topic-grid">
-
-      <div class="topic" id="bisnis">
-        <div class="topic-number">01 / BISNIS</div>
-        <h3>Business</h3>
-        <p>
-          Pelajari bagaimana perusahaan menciptakan
-          nilai, menghasilkan keuntungan, dan berkembang.
-        </p>
-      </div>
-
-      <div class="topic" id="pasar">
-        <div class="topic-number">02 / PASAR</div>
-        <h3>Markets</h3>
-        <p>
-          Kenali supply, demand, harga, saham,
-          dan bagaimana pasar bekerja.
-        </p>
-      </div>
-
-      <div class="topic" id="uang">
-        <div class="topic-number">03 / UANG</div>
-        <h3>Money</h3>
-        <p>
-          Pahami inflasi, suku bunga, bank sentral,
-          dan bagaimana uang memengaruhi hidup kita.
-        </p>
-      </div>
-
-      <div class="topic" id="investasi">
-        <div class="topic-number">04 / INVESTASI</div>
-        <h3>Investing</h3>
-        <p>
-          Kenali konsep investasi dan risiko
-          sebelum mengambil keputusan finansial.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- FEATURE -->
-
-<section class="feature">
-  <div class="container">
-
-    <div class="section-label">LATEST THINKING</div>
-
-    <h2 class="section-title">
-      Ideas worth<br>
-      understanding.
-    </h2>
-
-    <div class="feature-grid">
-
-      <article class="feature-box">
-        <div class="tag">ECONOMICS</div>
-
-        <h3>
-          Kenapa harga barang bisa naik?
-        </h3>
-
-        <p>
-          Dari supply & demand sampai kebijakan moneter,
-          pahami alasan di balik perubahan harga.
-        </p>
-
-        <a href="#inflation" class="read">
-          READ ARTICLE →
-        </a>
-      </article>
-
-      <article class="feature-box">
-        <div class="tag">BUSINESS</div>
-
-        <h3>
-          Bagaimana sebuah bisnis menghasilkan uang?
-        </h3>
-
-        <p>
-          Pelajari revenue, cost, profit, dan konsep
-          dasar yang digunakan perusahaan.
-        </p>
-
-        <a href="#quiz" class="read">
-          TEST YOURSELF →
-        </a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- INFLATION -->
-
-<section class="inflation" id="inflation">
-  <div class="container inflation-box">
-
-    <div>
-      <div class="section-label">
-        INFLATION EXPLAINED
-      </div>
-
-      <h2>
-        Your money<br>
-        changes over time.
-      </h2>
-
-      <p>
-        Inflasi adalah kenaikan harga barang dan jasa
-        secara umum dan terus-menerus. Dampaknya,
-        uang yang sama dapat membeli lebih sedikit barang.
-      </p>
-    </div>
-
-    <div class="stat">
-      <div class="stat-label">
-        SIMPLE IDEA
-      </div>
-
-      <div class="stat-number">
-        PRICE ↑
-      </div>
-
-      <p>
-        Harga naik → daya beli uang turun.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- QUIZ -->
-
-<section class="quiz" id="quiz">
-  <div class="container">
-
-    <div class="section-label">
-      TEST YOUR KNOWLEDGE
-    </div>
-
-    <div class="quiz-box">
-
-      <h2>
-        Economics Quick Test
-      </h2>
-
-      <div id="question"></div>
-
-      <div class="answers" id="answers"></div>
-
-      <div id="result"></div>
-
-      <div class="progress" id="progress"></div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- COMMUNITY -->
-
-<section class="community" id="community">
-  <div class="container">
-
-    <div class="section-label">
-      JOIN THE MOVEMENT
-    </div>
-
-    <h2>
-      Build the next generation
-      of economic thinkers.
-    </h2>
-
-    <p>
-      Young Economics Indonesia hadir untuk membuat
-      ekonomi lebih dekat, relevan, dan menarik bagi
-      generasi muda.
-    </p>
-
-    <div class="social">
-      <a href="#" onclick="comingSoon()">INSTAGRAM</a>
-      <a href="#" onclick="comingSoon()">TIKTOK</a>
-      <a href="#" onclick="comingSoon()">YOUTUBE</a>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-  <div class="container">
-    © 2026 <strong>Young Economics Indonesia</strong>.
-    Built for the next generation.
-  </div>
-</footer>
-
-
-<script>
-
-const questions = [
-  {
-    q:"Apa yang biasanya terjadi ketika demand meningkat sementara supply tetap?",
-    a:[
-      "Harga cenderung naik",
-      "Harga pasti turun",
-      "Produksi berhenti",
-      "Tidak ada perubahan"
-    ],
-    correct:0
-  },
-  {
-    q:"Apa yang dimaksud dengan inflasi?",
-    a:[
-      "Penurunan harga saham",
-      "Kenaikan harga secara umum dan terus-menerus",
-      "Kenaikan gaji semua orang",
-      "Penurunan jumlah uang"
-    ],
-    correct:1
-  },
-  {
-    q:"Apa tujuan utama perusahaan dalam kegiatan bisnis?",
-    a:[
-      "Menghindari konsumen",
-      "Menciptakan nilai dan memperoleh keuntungan",
-      "Menurunkan kualitas",
-      "Mengurangi produksi"
-    ],
-    correct:1
-  }
-];
-
-let current = 0;
-let score = 0;
-
-function loadQuestion(){
-
-  const q = questions[current];
-
-  document.getElementById("question").innerText = q.q;
-
-  const answers = document.getElementById("answers");
-
-  answers.innerHTML = "";
-
-  q.a.forEach((answer,index)=>{
-
-    const button = document.createElement("button");
-
-    button.className = "answer";
-
-    button.innerText = answer;
-
-    button.onclick = () => checkAnswer(index);
-
-    answers.appendChild(button);
-
-  });
-
-  document.getElementById("progress").innerText =
-    "Question " + (current+1) + " of " + questions.length;
-
-  document.getElementById("result").innerText = "";
-}
-
-function checkAnswer(index){
-
-  if(index === questions[current].correct){
-    score++;
-    document.getElementById("result").innerText = "✓ Correct!";
-  }else{
-    document.getElementById("result").innerText = "✕ Not quite.";
-  }
-
-  setTimeout(()=>{
-
-    current++;
-
-    if(current < questions.length){
-      loadQuestion();
-    }else{
-
-      document.getElementById("question").innerText =
-        "Quiz complete!";
-
-      document.getElementById("answers").innerHTML = "";
-
-      document.getElementById("progress").innerText =
-        "Your score: " + score + "/" + questions.length;
-
-      document.getElementById("result").innerText =
-        "Great job. Keep learning economics!";
-
-    }
-
-  },700);
-}
-
-function comingSoon(){
-
-  event.preventDefault();
-
-  alert("Social media Young Economics Indonesia akan segera hadir.");
-
-}
-
-loadQuestion();
-
-</script>
-
-</body>
-</html>
+<a href="#economics101">ECONOMICS 101</a>
+<a href="#business">BUSINESS</a>
+<a href="#markets">MARKETS</a>
+<a href="#money">MONEY</a>
+<a href="#investing
