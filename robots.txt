@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sakafndtnn-wq.github.io/young-economics-indonesia-/sitemap.xml
